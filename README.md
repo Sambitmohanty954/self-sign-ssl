@@ -57,6 +57,8 @@ else
 end
 ```
 * I also added one sample Certificate and RSA private key .
+> command to see certifcate **openssl x509 -in ca-cert.pem -noout -text**
+
 
 ### Things we can improve ( What i think i can improve )
 
