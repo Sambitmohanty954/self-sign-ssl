@@ -19,6 +19,7 @@ begin
 socket = TCPSocket.open(r_host.to_s, r_port.to_i)
 ssl_client = OpenSSL::SSL::SSLSocket.new(socket)
 ssl_client.connect
+CertificateGenerator.generate
 encryptic_certificate = File.open("ca-cert.pem").read
 decryptic_certificate = OpenSSL::X509::Certificate.new(encryptic_certificate)
 

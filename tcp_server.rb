@@ -3,7 +3,6 @@
 require 'socket'
 require 'rack'
 require 'pry'
-require_relative 'expiry_check.rb'
  
 app = Proc.new do
   ['200', {'Content-Type' => 'text/html'}, ["Hello world! Current time is #{Time.now}"]]
